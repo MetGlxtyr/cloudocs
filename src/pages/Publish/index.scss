@@ -1,0 +1,13 @@
+.upload-button {
+  display: inline-block;
+}
+
+.ql-toolbar:nth-child(1) {
+  display: none;
+}
+
+.publish-quill {
+  .ql-editor {
+    min-height: 300px;
+  }
+}

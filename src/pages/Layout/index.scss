@@ -1,0 +1,44 @@
+.ant-layout {
+  transition: all .2s;
+}
+
+.user-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 20px;
+
+  .user-name {
+    margin-right: 20px;
+  }
+
+  .user-logout {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.ant-layout-header {
+  padding: 0 !important;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.sider {
+  position: fixed;
+  z-index: 1500;
+  height: 100vh;
+}
+
+.logo {
+  height: 140px;
+  background: url('~@/assets/logo.svg') no-repeat center / 120px auto;
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
