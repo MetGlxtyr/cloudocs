@@ -8,8 +8,8 @@ export default function NotFound() {
     <Result
       status="404"
       title="404"
-      subTitle="Sorry，页面好像不存在"
+      subTitle="Sorry，页面好像不存在~"
       extra={<Button type="primary" onClick={() =>
-        navigate('/', { replace: true })}>返回首页</Button>}
+        navigate('/article', { replace: true })}>返回首页</Button>}
     />)
 }

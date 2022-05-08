@@ -41,7 +41,6 @@ export default function RegistrationForm() {
   const navigate = useNavigate();
 
   const onFinish = async (values) => {
-    console.log(values);
     try {
       await registerStore.signUp(values);
       navigate('/', { replace: true });
@@ -59,7 +58,7 @@ export default function RegistrationForm() {
         <Form
           {...formItemLayout}
           name="register"
-          validateTrigger={['onBlur', 'onChange']}
+          validateTrigger={[ 'onBlur', 'onChange' ]}
           onFinish={onFinish}
           scrollToFirstError
         >
@@ -104,7 +103,7 @@ export default function RegistrationForm() {
           <Form.Item
             name="confirm"
             label="确认密码"
-            dependencies={['pass']}
+            dependencies={[ 'pass' ]}
             hasFeedback
             rules={[
               {

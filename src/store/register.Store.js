@@ -17,7 +17,6 @@ export default class RegisterStore {
       gender,
       email
     }));
-    console.log(res);
     this.token = res.data.token;
     setToken(this.token);
   }

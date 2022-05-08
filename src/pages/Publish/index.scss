@@ -2,12 +2,24 @@
   display: inline-block;
 }
 
-.ql-toolbar:nth-child(1) {
-  display: none;
-}
-
 .publish-quill {
   .ql-editor {
     min-height: 300px;
   }
+}
+
+.share-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  min-width: 200px;
+  font-size: 36px;
+  border: none
+}
+
+.title:focus {
+  box-shadow: none;
 }

@@ -18,7 +18,11 @@ export default function App() {
     <div className="App">
       <Suspense
         fallback={
-          <Spin size='large' />
+          <Spin
+            size='large'
+            tip='Loading...'
+            style={{ position: 'fixed', left: 'calc(50vw - 16px)', top: 'calc(50vh - 30px)' }}
+          />
         }
       >
         <Routes>
@@ -27,8 +31,8 @@ export default function App() {
               <Layout />
             </AuthRoute>
           }>
-            <Route element={<Home />} />
-            <Route index path='article' element={<Article />} />
+            <Route index element={<Home />} />
+            <Route path='article' element={<Article />} />
             <Route path='publish' element={<Publish />} />
             <Route path='*' element={<NotFound />} />
           </Route>

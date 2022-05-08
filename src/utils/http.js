@@ -26,7 +26,7 @@ http.interceptors.response.use(
 http.interceptors.request.use(config => {
   const token = getToken();
   if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+    config.headers.Authorization = `Bearer ${ token }`;
   }
   return config;
 })

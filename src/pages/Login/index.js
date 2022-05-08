@@ -12,7 +12,7 @@ export default function Login() {
   const onFinish = async (values) => {
     try {
       await loginStore.logIn(values);
-      navigate('/article', { replace: true });
+      navigate('/', { replace: true });
       message.success('登录成功');
     } catch (err) {
       message.error(err.response?.data.message || '帐号或密码错误');
@@ -30,7 +30,7 @@ export default function Login() {
         <Form
           name="login-form"
           className="login-form"
-          validateTrigger={['onBlur', 'onChange']}
+          validateTrigger={[ 'onBlur', 'onChange' ]}
           initialValues={{ remember: true }}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
